@@ -10,8 +10,6 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# fix dependencies [look at nationalmuseum-soch]
-
 class Validator(BaseModel):
     shex: str = Query(..., title='ShEx Schema')
     rdf: str = Query(..., title='RDF (RDF XML)')
